@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Escola Municipal Joaquim Inês do Nascimento</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+
+<body>
+  <main class="container">
+
+    <section class="card destaque" id="sobre">
+      <h2>Escola Municipal Joaquim Inês do Nascimento</h2>
+      <img src="img/imagem_unidade_3.jpg" class="foto-escola">
+      <p>Endereço: R. Principal, 1919 - Pajucara, São Gonçalo do Amarante - RN, 59290-000</p>
+
+      <button onclick="mostrarHorarios()">Ver horário de funcionamento</button>
+
+      <div id="horarios-box" style="display:none; margin-top:10px; background:#f1f1f1; padding:10px; border-radius:8px; font-size:0.9rem;">
+        <p><strong>Domingo:</strong> Fechado</p>
+        <p><strong>Segunda-feira:</strong> 07:00–11:00, 13:00–17:00</p>
+        <p><strong>Terça-feira:</strong> 07:00–11:00, 13:00–17:00</p>
+        <p><strong>Quarta-feira:</strong> 07:00–11:00, 13:00–17:00</p>
+        <p><strong>Quinta-feira:</strong> 07:00–11:00, 13:00–17:00</p>
+        <p><strong>Sexta-feira:</strong> 07:00–11:00, 13:00–17:00</p>
+        <p><strong>Sábado:</strong> Fechado</p>
+      </div>
+    </section>
+
+    <section class="card" id="contato">
+      <h2>📞 Contato</h2>
+      <p><strong>Telefone:</strong> (00) 0000-0000</p>
+      <p><strong>Email:</strong> contato@escola.com</p>
+    </section>
+
+    <section class="card" id="avisos">
+      <h2>📢 Avisos</h2>
+      <ul>
+        <li>Reunião de pais: 12/03 às 18h</li>
+        <li>Feira de Ciências em abril</li>
+      </ul>
+    </section>
+
+    <section class="card" id="calendario">
+      <h2>📅 Calendário</h2>
+      <button onclick="mostrarCalendario()">Mostrar / Ocultar</button>
+      <div id="calendario-box">
+        <p><strong>Março:</strong> Início das aulas</p>
+        <p><strong>Abril:</strong> Feira de Ciências</p>
+      </div>
+    </section>
+
+  </main>
+
+  <button class="btn-atalhos" onclick="togglePainel()">☰</button>
+
+  <aside class="painel-atalhos" id="painel">
+    <h3>Atalhos</h3>
+    <a href="#sobre">Sobre</a>
+    <a href="#contato">Contato</a>
+    <a href="#avisos">Avisos</a>
+    <a href="#calendario">Calendário</a>
+  </aside>
+
+  <footer>
+    © <span id="ano"></span> Escola Municipal Joaquim Inês do Nascimento
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
