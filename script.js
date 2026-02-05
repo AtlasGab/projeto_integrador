@@ -29,3 +29,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
       window.mostrarHorarios = mostrarHorarios;
 });
+
+// =========== LOGIN ===========
+function mostrarCadastro() {
+  document.getElementById("cadastro").style.display = "block";
+}
+
+function tipoUsuario() {
+  const tipo = document.getElementById("tipo").value;
+  document.getElementById("campos-prof").style.display = tipo === "prof" ? "block" : "none";
+  document.getElementById("campos-aluno").style.display = tipo === "aluno" ? "block" : "none";
+}
