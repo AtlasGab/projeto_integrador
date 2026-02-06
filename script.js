@@ -3,10 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const painel = document.getElementById('painel');
   const botao = document.querySelector('.btn-atalhos');
 
-  function mostrarCalendario() {
-    if (!box) return;
-    box.style.display = box.style.display === 'block' ? 'none' : 'block';
-  }
+
 
   botao.addEventListener('click', function (e) {
     e.stopPropagation(); 
@@ -21,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   document.getElementById('ano').textContent = new Date().getFullYear();
 
-  window.mostrarCalendario = mostrarCalendario;
+
 
   function mostrarHorarios() {
     const hbox = document.getElementById('horarios-box');
@@ -31,13 +28,3 @@ document.addEventListener('DOMContentLoaded', function () {
   window.mostrarHorarios = mostrarHorarios;
 });
 
-
-function mostrarCadastro() {
-  document.getElementById("cadastro").style.display = "block";
-}
-
-function tipoUsuario() {
-  const tipo = document.getElementById("tipo").value;
-  document.getElementById("campos-prof").style.display = tipo === "prof" ? "block" : "none";
-  document.getElementById("campos-aluno").style.display = tipo === "aluno" ? "block" : "none";
-}
