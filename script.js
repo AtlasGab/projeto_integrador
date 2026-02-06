@@ -4,11 +4,12 @@ document.addEventListener('DOMContentLoaded', function () {
   const botao = document.querySelector('.btn-atalhos');
 
   function mostrarCalendario() {
+    if (!box) return;
     box.style.display = box.style.display === 'block' ? 'none' : 'block';
   }
 
   botao.addEventListener('click', function (e) {
-    e.stopPropagation();
+    e.stopPropagation(); 
     painel.classList.toggle('ativo');
   });
 
@@ -30,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
   window.mostrarHorarios = mostrarHorarios;
 });
 
-// =========== LOGIN ===========
+
 function mostrarCadastro() {
   document.getElementById("cadastro").style.display = "block";
 }
